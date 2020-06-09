@@ -10,13 +10,13 @@ while (1):
         connection_to_bank = 1
 
         try:
-            connToko = pymysql.connect(host='localhost', user='root', passwd='', db='db_tokoims', port=3306)
+            connToko = pymysql.connect(host='db4free.net', user='yuniaswandewi1', passwd='nyawmenyaw', db='db_tokoims', port=3306)
             curToko = connToko.cursor()
         except:
             print("can't connect to TOKO")
 
         try:
-            connBank = pymysql.connect(host='localhost', user='root', passwd='', db='db_bankims', port=3306)
+            connBank = pymysql.connect(host='db4free.net', user='yuniaswandewi', passwd='nyawmenyaw', db='db_bankims', port=3306)
             curBank = connBank.cursor()
         except:
             print("can't connect to BANK")
